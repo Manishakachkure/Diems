@@ -12,11 +12,11 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <%  String username=request.getParameter("username");
-        String password=request.getParameter("password");
-        if((username.equals("manisha") && password.equals("manu18")))
+        <%  String username=request.getParameter("Username");
+        String password=request.getParameter("Password");
+        if((username.equals("Manisha") && password.equals("manu18")))
         {
-            session.setAttribute("username",username);
+            session.setAttribute("Username",username);
             response.sendRedirect("Homepage.jsp");
             
         }      
